@@ -1,0 +1,59 @@
+button {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    background-color: darkblue;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0;
+    text-align: left;
+    overflow: hidden !important;
+    color: white;
+}
+
+button .loader {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all ease;
+}
+
+button .loader.loading {
+    animation-duration: 2s;
+    animation-name: loading;
+}
+
+button.loaded {
+    animation-duration: 500ms;
+    animation-name: loaded;
+}
+
+@keyframes loading {
+    0% {opacity: 0%;}
+    100% {opacity: 50%;}
+}
+
+@keyframes loaded {
+    0% {background-color: darkblue;}
+    50% {background-color: green;}
+    100% {background-color: darkblue;}
+}
+
+button span {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 2%;
+    user-select: none;
+}
