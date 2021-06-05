@@ -39,10 +39,7 @@
 }
 
 @keyframes loaded {
-    0% {left: auto; opacity: 50%; width: 100%; right: 0}
-    100% {left: auto; opacity: 50%; width: 0; right: 0}
-}
-
-.lpb-button span {
-    user-select: none;
+    0% {opacity: 50%; color: black; }
+    50% {opacity: 70%; color: white; }
+    100% {opacity: 0%; color:black; }
 }

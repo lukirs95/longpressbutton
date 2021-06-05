@@ -12,9 +12,6 @@ class LongPressButton {
       this._button.classList.add(CSSident + 'button');
       this._loader = document.createElement('div');
       this._loader.className = CSSident + 'loader';
-      this._label = document.createElement('span');
-      this._label.textContent = this._button.textContent;
-      this._button.textContent = '';
 
       this._fn = button.onclick;
       this._button.onclick = () => {};
@@ -56,7 +53,7 @@ class LongPressButton {
         }
       }, true);
   
-      this._button.append(this._loader, this._label);
+      this._button.append(this._loader);
 
       return this._button;
     }
