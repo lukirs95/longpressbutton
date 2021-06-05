@@ -2,10 +2,13 @@
   "name": "longpressbutton",
   "version": "1.0.0",
   "description": "A lightweight Long Press Button Library with static html support",
-  "main": "longpress.js",
+  "main": "longpressbutton.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukirs95/longpressbutton.git"
+  },
+  "scripts": {
+    "build": "webpack"
   },
   "keywords": [
     "longpress",
@@ -25,5 +28,10 @@
   "homepage": "https://github.com/lukirs95/longpressbutton#readme",
   "dependencies": {
     "webpack": "^5.38.1"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^4.7.0"
   }
 }

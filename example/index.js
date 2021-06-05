@@ -1,20 +1,11 @@
-import {default as longpress} from '../longpressbutton.js';
-
-const btn2 = document.querySelector('button.btn2');
-btn2.onclick = () => {
-    alert('button 2 clicked...');
-}
-
-longpress.init();
+import {lpButton as longpress} from '../longpressbutton.js';
 
 const element = document.createElement('div');
-element.textContent = 'button 3';
+element.textContent = 'Press 2s';
 element.onclick = () => {
-    console.log('4th click...');
+    alert('third button 2s');
 }
 
-const customButton = longpress.newButton(element, 500);
-
-customButton.addEventListener('longpress', (event) => alert(event));
+const customButton = longpress.newButton(element, 2000);
 
 document.body.append(customButton);

@@ -11,6 +11,9 @@
 .lpb-button .lpb-loader {
     position: absolute;
     background-color: black;
+    border-radius: inherit;
+    border-style: none;
+    border-color: none;
     opacity: 0;
     height: 100%;
     width: 100%;

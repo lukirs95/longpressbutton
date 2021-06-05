@@ -9,7 +9,7 @@ const CSSident = 'lpb-';
 class LongPressButton {
     constructor(button, duration) {
       this._button = button;
-      this._button.className = CSSident + 'button';
+      this._button.classList.add(CSSident + 'button');
       this._loader = document.createElement('div');
       this._loader.className = CSSident + 'loader';
       this._label = document.createElement('span');
@@ -87,7 +87,7 @@ const init = (searchArea = undefined) => {
   return buttons;
 }
 
-export default {
+export const lpButton = {
   /**
    * Create new LongPressButton and return the Button itself
    * 

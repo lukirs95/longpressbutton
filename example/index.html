@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../longpressbutton.css">
-    <script src="./index.js" type="module" defer></script>
+    <!-- <link rel="stylesheet" href="../longpressbutton.css"> -->
+    <script src="../dist/longpressbutton-min.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <button onclick="alert('clicked')" data-longpress="true" data-duration="1000">Press 1s</button>
+    <style>
+        button {
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            border-style: none;
+            border-color: none;
+        }
+        div {
+            background-color: red;
+            height: 30px;
+            width: 100px;
+        }
+    </style>
+    <p>These buttons are automatically converted:</p>
+    <button onclick="alert('first Button 1s')" data-longpress="true" data-duration="1000">Press 1s</button>
     <button class="btn2" data-longpress="true" data-duration="500">Press 500ms</button>
-    <div data-longpress="true" data-duration="300">This is longpressable</div>
+    <script>
+        document.querySelector('.btn2').addEventListener('longpress', () => {
+        alert('second button 500ms');
+        });
+    </script>
+    <br>
+    <p>You can also use this library as module to build your buttons in javascript:</p>
+    <script src="./index.js" type="module"></script>
 </body>
 </html>
