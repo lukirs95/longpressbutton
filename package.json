@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/lukirs95/longpressbutton/issues"
   },
-  "homepage": "https://github.com/lukirs95/longpressbutton#readme"
+  "homepage": "https://github.com/lukirs95/longpressbutton#readme",
+  "dependencies": {
+    "webpack": "^5.38.1"
+  }
 }

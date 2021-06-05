@@ -1,4 +1,4 @@
-import {default as longpress} from '../longpress.js';
+import {default as longpress} from '../longpressbutton.js';
 
 const btn2 = document.querySelector('button.btn2');
 btn2.onclick = () => {
