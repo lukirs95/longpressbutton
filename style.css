@@ -1,4 +1,4 @@
-button.longpress {
+.lpb-button {
     display: inline-block;
     position: relative;
     appearance: none;
@@ -8,7 +8,7 @@ button.longpress {
     user-select: none;
 }
 
-button.longpress .loader {
+.lpb-button .lpb-loader {
     position: absolute;
     background-color: black;
     opacity: 0;
@@ -19,12 +19,12 @@ button.longpress .loader {
     top: 0;
 }
 
-button.longpress .loader.loading {
+.lpb-button .lpb-loader.lpb-loading {
     animation-duration: 2s;
     animation-name: loading;
 }
 
-button.longpress .loader.loaded {
+.lpb-button .lpb-loader.lpb-loaded {
     animation-fill-mode: forwards;
     animation-duration: 200ms !important;
     animation-name: loaded;
@@ -40,6 +40,6 @@ button.longpress .loader.loaded {
     100% {left: auto; opacity: 50%; width: 0; right: 0}
 }
 
-.longpress span {
+.lpb-button span {
     user-select: none;
 }

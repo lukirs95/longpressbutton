@@ -1,0 +1,26 @@
+{
+  "name": "longpressbutton",
+  "version": "1.0.0",
+  "description": "A lightweight Long Press Button Library with static html support",
+  "main": "longpress.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukirs95/longpressbutton.git"
+  },
+  "keywords": [
+    "longpress",
+    "button",
+    "js",
+    "css",
+    "html",
+    "press",
+    "long",
+    "hold"
+  ],
+  "author": "Lucas Kirsche",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukirs95/longpressbutton/issues"
+  },
+  "homepage": "https://github.com/lukirs95/longpressbutton#readme"
+}
