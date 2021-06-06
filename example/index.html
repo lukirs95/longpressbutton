@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="../longpressbutton.css"> -->
     <script src="../dist/longpressbutton-min.js" type="text/javascript" defer></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <style>
-        .btn1 {
-            background-color:#44c767;
-            border-radius:28px;
-            border:1px solid #18ab29;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:17px;
-            padding:16px 31px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #2f6627;
-        }
-        .btn1:hover {
-            background-color:#5cbf2a;
-        }
-        .btn2 {
-            box-shadow:inset 0px 1px 0px 0px #f5978e;
-            background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
-            background-color:#f24537;
-            border-radius:6px;
-            border:1px solid #d02718;
-            display:inline-block;
-            cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
-            font-size:15px;
-            font-weight:bold;
-            padding:6px 24px;
-            text-decoration:none;
-            text-shadow:0px 1px 0px #810e05;
-        }
-        .btn2:hover {
-            background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
-            background-color:#c62d1f;
-        }
-        div {
-            background-color: red;
-            height: 30px;
-            width: 100px;
-        }
+      .btn1 {
+        background-color: #44c767;
+        border-radius: 28px;
+        border: 1px solid #18ab29;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 17px;
+        padding: 16px 31px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2f6627;
+      }
+      .btn1:hover {
+        background-color: #5cbf2a;
+      }
+      .btn2 {
+        box-shadow: inset 0px 1px 0px 0px #f5978e;
+        background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+        background-color: #f24537;
+        border-radius: 6px;
+        border: 1px solid #d02718;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #810e05;
+      }
+      .btn2:hover {
+        background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+        background-color: #c62d1f;
+      }
+      div {
+        background-color: red;
+        height: 30px;
+        width: 100px;
+      }
     </style>
     <p>These buttons are automatically converted:</p>
-    <button class="btn1" onclick="console.log('first Button 1s')" data-longpress="true" data-duration="1000">Press 1s</button>
+    <button
+      class="btn1"
+      onclick="console.log('first Button 1s')"
+      data-longpress="true"
+      data-duration="1000"
+    >
+      Press 1s
+    </button>
     <button class="btn2" data-longpress="true" data-duration="500">Press 500ms</button>
     <script>
-        document.querySelector('.btn2').addEventListener('longpress', () => {
+      document.querySelector('.btn2').addEventListener('longpress', () => {
         alert('second button 500ms');
-        });
+      });
     </script>
-    <br>
+    <br />
     <p>You can also use this library as module to build your buttons in javascript:</p>
     <script src="./index.js" type="module"></script>
-</body>
+  </body>
 </html>

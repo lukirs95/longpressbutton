@@ -1,45 +1,58 @@
 .lpb-button {
-    display: inline-block;
-    position: relative;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    overflow: hidden;
-    user-select: none;
+  display: inline-block;
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  overflow: hidden;
+  user-select: none;
 }
 
 .lpb-button .lpb-loader {
-    position: absolute;
-    background-color: black;
-    border-radius: inherit;
-    border-style: none;
-    border-color: none;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
+  position: absolute;
+  background-color: black;
+  border-radius: inherit;
+  border-style: none;
+  border-color: none;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .lpb-button .lpb-loader.lpb-loading {
-    animation-duration: 2s;
-    animation-name: loading;
+  animation-duration: 2s;
+  animation-name: loading;
 }
 
 .lpb-button .lpb-loader.lpb-loaded {
-    animation-fill-mode: forwards;
-    animation-duration: 200ms !important;
-    animation-name: loaded;
+  animation-fill-mode: forwards;
+  animation-duration: 200ms !important;
+  animation-name: loaded;
 }
 
 @keyframes loading {
-    0% {opacity: 0%;}
-    100% {opacity: 50%;}
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 50%;
+  }
 }
 
 @keyframes loaded {
-    0% {opacity: 50%; color: black; }
-    50% {opacity: 70%; color: white; }
-    100% {opacity: 0%; color:black; }
+  0% {
+    opacity: 50%;
+    color: black;
+  }
+  50% {
+    opacity: 70%;
+    color: white;
+  }
+  100% {
+    opacity: 0%;
+    color: black;
+  }
 }
