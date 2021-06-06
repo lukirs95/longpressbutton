@@ -12,7 +12,6 @@ class LongPressButton {
     this._button.classList.add(CSSident + 'button');
     this._loader = document.createElement('div');
     this._loader.className = CSSident + 'loader';
-
     this._fn = button.onclick;
     this._button.onclick = () => {};
 
