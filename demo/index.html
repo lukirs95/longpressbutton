@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./demo.css" />
+    <script src="../dist/longpressbutton-min.js" defer></script>
+    <script src="./helper.js" defer></script>
+    <title>demo: Long Press Button</title>
+  </head>
+  <body>
+    <header>
+      <h1>Long Press Button <span>DEMO</span></h1>
+      <span>A lightwight module for adding long press functionality to your buttons</span>
+    </header>
+    <main>
+      <article>
+        <section class="text">
+          <h1>longpressbutton-min.js</h1>
+          <p>
+            Turn every button or element of the DOM into a long pressable button by linking the
+            <span>longpressbutton-min.js</span> into your html head
+          </p>
+          <code
+            >&lt;script src=&quot;./path-to-/longpressbutton-min.js&quot;
+            defer&gt;&lt;/script&gt;</code
+          >
+          <p>
+            and add <span>data-longpress="true"</span> and
+            <span>data-longpress="<span style="font-style: italic">time-in-ms</span>" e.g.</span>
+          </p>
+          <code>&lt;button data-longpress=&quot;1000&quot;&gt;Press Me&lt;/button&gt;</code>
+        </section>
+        <section class="demo">
+          <button class="btn1" data-longpress="1000">Press 1s</button>
+          <div class="action hidden">FIRE!</div>
+        </section>
+      </article>
+    </main>
+    <script>
+      const btns = document.querySelectorAll('[data-longpress]');
+      btns.forEach((btn) => {
+        btn.addEventListener('longpress', () => {
+          btn.nextElementSibling.classList.toggle('hidden');
+          window.setTimeout(() => btn.nextElementSibling.classList.toggle('hidden'), 2000);
+        });
+      });
+    </script>
+    <div class="msgbox hidden"></div>
+  </body>
+</html>

@@ -97,7 +97,7 @@ const init = (searchArea = undefined) => {
     ? searchArea.querySelectorAll('[data-longpress]')
     : document.querySelectorAll('[data-longpress]');
   buttons.forEach((button) => {
-    if (button.dataset.longpress) new LongPressButton(button, button.dataset.duration);
+    new LongPressButton(button, button.dataset.longpress);
   });
   return buttons;
 };
@@ -111,7 +111,7 @@ export const lpButton = {
    * @returns HtmlElement
    */
   newButton: (button, duration) => {
-    return new LongPressButton(button, duration);
+    return new LongPressButton(button, duration ?? 1000);
   },
   /**
    * Initialize document and create LongPressButtons.

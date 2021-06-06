@@ -1,0 +1,127 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: rgb(22, 22, 24);
+  background: linear-gradient(
+    132deg,
+    rgba(22, 22, 24, 1) 0%,
+    rgba(66, 66, 77, 1) 44%,
+    rgba(60, 61, 65, 1) 100%
+  );
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+p,
+p span,
+div {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em;
+}
+
+header h1 {
+  margin: 0;
+}
+
+code {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: lighter;
+  color: orange;
+  padding: 1em;
+  background-color: black;
+  border-radius: 4px;
+  margin: 0.5em auto 0.5em auto;
+}
+
+.msgbox {
+  display: inline-block;
+  background: rgba(150, 255, 150, 0.8);
+  opacity: 1;
+  position: fixed;
+  min-height: 2em;
+  top: 30px;
+  right: 2em;
+  border-radius: 3px;
+  border: solid white 2px;
+  width: fit-content;
+  transition: opacity ease-out 200ms;
+  padding: 0.5em 0.5em 0 0.5em;
+  color: black;
+  font-family: Roboto;
+}
+
+main {
+  padding: 0.5em;
+  background: darkslategray;
+  box-shadow: 0px 0px 10px black;
+  height: 100%;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.text {
+  max-width: 700px;
+}
+
+section.demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: 1em;
+}
+
+.action {
+  text-align: center;
+  opacity: 1;
+  transition: opacity ease-out 100ms;
+}
+
+.hidden {
+  opacity: 0;
+}
