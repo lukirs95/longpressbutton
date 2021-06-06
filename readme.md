@@ -14,7 +14,7 @@ You can see this module in action on https://lucas-kirsche.de/longpressbutton/de
 
 ## USAGE
 
-You can use this module in 3 different ways.
+Use this module in 3 different ways.
 
 ### simple
 
