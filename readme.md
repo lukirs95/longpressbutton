@@ -1,3 +1,5 @@
+[![DeepScan grade](https://deepscan.io/api/teams/14358/projects/17488/branches/401713/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=14358&pid=17488&bid=401713)
+
 # Long Press Button Module
 
 A lightwight Long Press Button Module that let you turn everything on your Homepage into an press & hold button.
