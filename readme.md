@@ -1,4 +1,5 @@
 [![DeepScan grade](https://deepscan.io/api/teams/14358/projects/17488/branches/401713/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=14358&pid=17488&bid=401713)
+[![CodeFactor](https://www.codefactor.io/repository/github/lukirs95/longpressbutton/badge/main)](https://www.codefactor.io/repository/github/lukirs95/longpressbutton/overview/main)
 
 # Long Press Button Module
 
