@@ -67,3 +67,11 @@ In case you have dynamic elements which are created by your script use this modu
     lpButton.newButton(customElement, 1000); //returns the customElement
 
     document.append(customElement);
+
+Just make sure to link the longpressbutton.css.
+
+## CSS
+
+Per default this module comes with a animation while pressing. You can specify your own stylings by overriding the classes.
+
+Every longpress button element has a **.lpb-button** class and gets a child element with a **.lpb-loader** class. This element gets a **.lpb-loading** class while pressing and a **.lpb-loaded** class on timer expiration until a css keyframe animation ends.
