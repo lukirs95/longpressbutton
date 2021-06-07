@@ -75,14 +75,14 @@ class LongPressButton {
 
   _onAnimationEnd() {
     this._loader.classList.remove(CSSident + 'loaded');
-    this._loader.removeEventListener('animationend', this._onAnimationEnd.bind(this));
+    this._loader.removeEventListener('animationend', this._onAnimationEnd);
   }
 
   _exec(event) {
     this._touch = false;
     this._loader.classList.remove(CSSident + 'loading');
     this._loader.classList.add(CSSident + 'loaded');
-    this._loader.addEventListener('animationend', () => this._onAnimationEnd());
+    this._loader.addEventListener('animationend', this._onAnimationEnd.bind(this));
     this._button.dispatchEvent(new Event('longpress', event));
     this._fn ? this._fn(event) : null;
   }
